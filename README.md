@@ -1,6 +1,6 @@
 # 🇵🇭 PH Embedded & Firmware Opportunities
 
-A curated directory of companies and organizations in the Philippines offering opportunities in **embedded systems**, **firmware engineering**, **hardware design**, **IoT**, and **robotics R&D**. This resource is intended for engineers, students, and tech enthusiasts exploring career paths or collaboration opportunities in embedded technology.
+A curated directory of companies and organizations in the Philippines offering opportunities in **embedded systems**, **firmware engineering**, **hardware design**, and **IoT**. This resource is intended for engineers, students, and tech enthusiasts exploring career paths or collaboration opportunities in embedded technology.
 
 ---
 
@@ -16,6 +16,32 @@ A curated directory of companies and organizations in the Philippines offering o
 
 ---
 
+## 🚀 Running Locally
+
+**⚠️ Important:** This project requires a live server to run properly. Opening `index.html` directly in a browser (using `file://` protocol) will not work due to CORS restrictions when loading `data.json`.
+
+### Option 1: VS Code Live Server (Recommended)
+1. Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code
+2. Right-click on `index.html`
+3. Select "Open with Live Server"
+
+### Option 2: Python HTTP Server
+```bash
+python -m http.server 8000
+```
+Then open `http://localhost:8000` in your browser.
+
+### Option 3: Node.js http-server
+```bash
+npx http-server -p 8000
+```
+Then open `http://localhost:8000` in your browser.
+
+### Option 4: GitHub Pages (Production)
+The site is automatically deployed to GitHub Pages when pushed to the main branch. See the repository's Pages settings for the live URL.
+
+---
+
 ## ⚠️ Disclaimer
 
 - This repository is a **curated list only**.  
@@ -27,20 +53,54 @@ A curated directory of companies and organizations in the Philippines offering o
 
 ## 📌 Contributions
 
-Contributions are welcome! Please submit a **pull request** to add new companies, update information, or improve the formatting. When adding a company, try to include:
+Contributions are welcome! Please submit a **pull request** to add new companies, update information, or improve the formatting.
 
-- Company Name  
-- Focus Area / Industry  
-- Roles or Projects (e.g., Firmware, Hardware, IoT, Robotics, R&D)  
-- Website or LinkedIn link  
+### How to Add a New Company
 
----
+1. **Open `data.json`** in the repository root.
 
-## 📌 Example Entry
+2. **Add a new entry** following this JSON structure:
+   ```json
+   {
+     "company": "Company Name",
+     "focus_area": "Industry or Focus Area",
+     "roles_or_projects": "Job Roles or Project Types",
+     "website_or_linkedin": "https://company-website.com/"
+   }
+   ```
 
-| Company | Focus Area | Roles / Projects | Website / LinkedIn |
-|---------|------------|-----------------|------------------|
-| Integrated Micro-Electronics, Inc. (IMI) | EMS, Product Engineering | Hardware, Firmware, PCB Design, Test & Validation | [Website](https://www.global-imi.com/) |
+3. **Important Guidelines:**
+   - **Maintain alphabetical order** by company name (A-Z)
+   - Use proper JSON formatting (commas, quotes, brackets)
+   - Ensure the `website_or_linkedin` field contains a valid URL
+   - Keep descriptions concise and relevant
+
+4. **Example Entry:**
+   ```json
+    {
+      "company": "Dyson Electronics",
+      "focus_area": "Consumer Electronics",
+      "roles_or_projects": "Embedded Systems, Firmware Engineering, Robotics, R&D",
+      "website_or_linkedin": "https://www.dyson.com/"
+    }
+   ```
+
+5. **Test Locally (Optional):**
+   - **Important:** Use a live server (see "Running Locally" section above) - do not open `index.html` directly
+   - Verify the new company appears in the table in alphabetical order
+   - Check that all links work correctly
+
+6. **Submit Your Changes:**
+   - Commit your changes with a descriptive message
+   - Push to your fork
+   - Create a pull request
+
+### Required Fields
+
+- **Company**: Full company name
+- **Focus Area**: Industry, sector, or primary focus (e.g., "IoT, Medical Devices, Wearables")
+- **Roles / Projects**: Job roles or project types offered (e.g., "Senior Firmware Engineer", "Embedded Systems, Firmware Engineering")
+- **Website / LinkedIn**: Valid URL to company website, career page, or LinkedIn profile
 
 ---
 
