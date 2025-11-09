@@ -65,7 +65,10 @@ The site is automatically deployed to GitHub Pages using GitHub Actions when you
 
 ## 📌 Contributions
 
-Contributions are welcome! Please submit a **pull request** to add new companies, update information, or improve the formatting.
+Contributions are welcome! You can contribute in two ways:
+
+1. **Submit a Pull Request** - Add new companies, update information, or improve the formatting directly
+2. **Open an Issue** - If you'd like to suggest a company but prefer not to make the changes yourself, you can open an issue with the company details and we'll add it for you
 
 ### How to Add a New Company
 
